@@ -1,19 +1,20 @@
-<%- include("partials/header") -%>
-<div class="home">
-<h1 class="home">Dear Diary</h1>
 
-<p class="hometext"><%= homeText %></p>
+<%- include("partials/header"); -%>
+
+    <h1 class="home">Home</h1>
+    <p class="hometext"> <%= startingContent %> </p>
 
 
+  <%  posts.forEach(function(post){ %>
 
-<% content.forEach(i => { %>
-    <h1 class="home"><%=  i.t %></h1>
-    <p class="hometext">
-        <%= i.b.substring(0,100) + "..." %>
-        <a href="/content/<%=i.t%>">Read More</a>
+    <h1><%=post.title%></h1>
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%>
+    <a href="/posts/<%=post._id%>">Read More</a>
     </p>
-  
-<% }) %>
 
-</div>
-<%- include("partials/footer") -%>
+
+    <% }) %>
+
+
+<%- include("partials/footer"); -%>
