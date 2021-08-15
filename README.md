@@ -8,4 +8,4 @@ Data saved using mongodb Database.
 ![Screenshot (156)](https://user-images.githubusercontent.com/73050095/122797209-3832b100-d28d-11eb-86f4-e15c486ffa5a.png)
 
 Can Compose Daily entries or use this to create your own blogs or writtings.
-The home page will look like this and then when you click on read more it will take you to indiviual page
+The home page will look like this and then when you click on read more it will take you to indiviual page.
